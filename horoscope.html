@@ -1,0 +1,213 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<link href="css/horoscope.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase" rel="stylesheet">
+
+<title>Astrology & Tarot</title>
+</head>
+
+<h1>
+	Astrology & Tarot Readings 
+</h1>
+
+<body>
+	<div id="container">
+	<p>
+		Please Enter Your Birthday
+	</p> 
+
+		<img src="horoscope/aqua.png" alt="Aquarious">
+		<img src="horoscope/aries.png" alt="Aries">
+		<img src="horoscope/cancer.png" alt="Cancer">
+		<img src="horoscope/pices.png" alt="Pisces">
+		<img src="horoscope/sag.png" alt="Sagittarius">
+		<img src="horoscope/capricorn.png" alt="Capricorn">
+		<img src="horoscope/taurus.png" alt="Taurus">
+		<img src="horoscope/virgo.png" alt="Virgo">
+		<img src="horoscope/libra.png" alt="Libra">
+		<img src="horoscope/leo.png" alt="Leo">
+		<img src="horoscope/gemini.png" alt="Gemini">
+		<img src="horoscope/scorpio.png" alt="Scorpio">
+
+		<br>
+
+		<br>
+
+		<br>
+
+		<div id="horoscope">
+        <div class="choices">
+            <select id="birthdayMonth">
+            <option selected value="0">Month...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            </select>
+        </div>
+
+    	<div class="choices">
+       		<select id="birthdayDay">
+        	<option selected value="0">Day...</option>
+        	<option value="1">1</option>
+        	<option value="2">2</option>
+        	<option value="3">3</option>
+        	<option value="4">4</option>
+        	<option value="5">5</option>
+        	<option value="6">6</option>
+        	<option value="7">7</option>
+        	<option value="8">8</option>
+        	<option value="9">9</option>
+        	<option value="10">10</option>
+        	<option value="11">11</option>
+        	<option value="12">12</option>
+        	<option value="13">13</option>
+        	<option value="14">14</option>
+        	<option value="15">15</option>
+        	<option value="16">16</option>
+        	<option value="17">17</option>
+        	<option value="18">18</option>
+        	<option value="19">19</option>
+        	<option value="19">19</option>
+        	<option value="20">20</option>
+        	<option value="21">21</option>
+        	<option value="22">22</option>
+        	<option value="23">23</option>
+        	<option value="24">24</option>
+        	<option value="25">25</option>
+        	<option value="26">26</option>
+        	<option value="27">27</option>
+        	<option value="28">28</option>
+        	<option value="29">29</option>
+        	<option value="30">30</option>
+        	<option value="31">31</option>
+        	</select>
+        </div>
+    	</div>
+
+        <p id="welcome">
+
+        </p>
+
+        <p id="link">
+            <a href="https://www.astrology-zodiac-signs.com/" id="link2">Click here to learn more</a>
+        </p>
+
+        <br>
+
+        <p id="horoscope">
+
+        </p>
+
+        <div id="buttonHolder">
+        <button onclick="getHoroscope()"><b>Get Horoscope</b></button>
+    	</div>
+
+        <hr>
+
+        <br>
+        <br>
+
+        <figure>
+            <img src="horoscope/cardBack.jpg" id="tarotCard"alt="tarot">
+            <figcaption>Daily Tarot</figcaption>
+        </figure>
+    
+
+        <div id="buttonHolder">
+        <button id="button" onclick="runTarrot()"><b>Get Tarot Reading</b></button>
+
+        <p id="tarotReading">
+        	
+        </p>
+
+        <br>
+
+        <p id="link">
+        <a href="https://www.trustedtarot.com/card-meanings/">Click here to learn more</a>
+        </p>
+    	</div>
+
+    	<hr>
+
+    	<h2>
+    		What Planet Rules Your Mood?
+    	</h2>
+
+    	<p>
+    		Take this fun quiz to find out what planet might be influencing the way you feel about life in general. Select the answer that sounds most like you.
+    	</p>
+
+    	<p>1.) At your best, you feel:</p>
+    	<select id="questionOne">
+    		<option selected value="0">Choose One...</option>
+    		<option value="1">Full of energy and active.</option>
+    		<option value="2">Very laid back and going with the flow.</option>
+    		<option value="3">Adhering to your predictable routine.</option>
+    		<option value="4">Kind of naughty and rebellios!</option>
+    	</select>
+
+    	<p>2.) At your worst, you feel:</p>
+    	<select id="questionTwo">
+    		<option selected value="0">Choose One...</option>
+    		<option value="1">Unsure or unable to control things.</option>
+    		<option value="2">Angry.</option>
+    		<option value="3">Depressed.</option>
+    		<option value="4">Guilty.</option>
+    	</select>
+
+    	<p>3.) What kind of story do you like best?</p>
+    	<select id="questionThree">
+    		<option selected value="0">Choose One...</option>
+    		<option value="1">Romance or fantasy.</option>
+    		<option value="2">Historical or educational.</option>
+    		<option value="3">Biographies or adventures.</option>
+    		<option value="4">Thrillers or dark tales</option>
+    	</select>
+
+    	<p>4.) When you see someone being cruel to someone else, you:</p>
+    	<select id="questionFour">
+    		<option selected value="0">Choose One...</option>
+    		<option value="1">Politely ask the tormentor to stop.</option>
+    		<option value="2">Ignore it - life can be unfair.</option>
+    		<option value="3">Pity the victim but stay out of it</option>
+    		<option value="4">Kick some butt!</option>
+    	</select>
+        <br>
+
+        <div id="buttonHolder">
+        <button id="button" onclick="runQuiz()"><b>Check Quiz</b></button>
+        </div>
+
+        <p id="quiz">
+
+        </p>
+
+
+
+    </div>
+
+<script src="js/horoscope.js" type="text/javascript"></script>
+
+</body>
+
+<footer>
+	Created by Fallyn Logan 
+	<br>
+	CU Boulder TAM '21
+</footer>
+
+</html>
